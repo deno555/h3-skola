@@ -1,15 +1,17 @@
 <template>
-  <mainHeader></mainHeader>
+<LoginForm></LoginForm>
+  
 </template>
 
 <script>
-import mainHeader from './components/mainHeader.vue'
+import LoginForm from './components/loginForm.vue';
+
 
 export default {
   name: 'App',
   components: {
-    mainHeader
-  }
+    LoginForm
+}
 }
 </script>
 
