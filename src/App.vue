@@ -1,14 +1,14 @@
 <template>
-  <HelloWorld></HelloWorld>
+  <mainHeader></mainHeader>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import mainHeader from './components/mainHeader.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    mainHeader
   }
 }
 </script>
