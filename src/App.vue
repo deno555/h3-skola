@@ -1,16 +1,25 @@
 <template>
-<LoginForm></LoginForm>
+
+<ChooseStudium></ChooseStudium>
+
+
+
   
 </template>
 
 <script>
-import LoginForm from './components/loginForm.vue';
+
+import ChooseStudium from './components/chooseStudium.vue';
+
+
+
 
 
 export default {
   name: 'App',
   components: {
-    LoginForm
+    ChooseStudium,
+
 }
 }
 </script>
