@@ -1,9 +1,15 @@
 <template>
-<a href="/Login">login</a>
+<a href="/Login">
+  Login
+</a>
+
 <br>
-<a href="/Register">register</a>
+<a href="/Register">
+  Register
+</a>
 <router-view></router-view>
 <component :is="currentView"></component>
+
 
 
 
@@ -17,8 +23,8 @@ import Login from './components/loginForm.vue';
 
 
 const routes = {
-  'Login': Login,
-  'Register': Register
+  '/Login': Login,
+  '/Register': Register
 }
 export default{
   data(){
