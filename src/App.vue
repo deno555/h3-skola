@@ -1,6 +1,9 @@
 <template>
-
-<ChooseStudium></ChooseStudium>
+<a href="/Login">login</a>
+<br>
+<a href="/Register">register</a>
+<router-view></router-view>
+<component :is="currentView"></component>
 
 
 
@@ -9,19 +12,32 @@
 
 <script>
 
-import ChooseStudium from './components/chooseStudium.vue';
+import Register from './components/registerForm.vue';
+import Login from './components/loginForm.vue';
 
 
-
-
-
-export default {
-  name: 'App',
-  components: {
-    ChooseStudium,
-
+const routes = {
+  'Login': Login,
+  'Register': Register
 }
+export default{
+  data(){
+    return {
+      currentPath: window.location.hash,
+    }
+  },
+  computed:{
+    currentView(){
+      return routes[this.currentPath.slice(1) || '/'] 
+    }
+  },
+  mounted(){
+    window.addEventListener('hashchange', () => {
+      this.currentPath = window.location.hash
+    })
+  }
 }
+
 </script>
 
 
