@@ -1,0 +1,63 @@
+<template>
+<div class="bg-zinc-800 h-[100%]">
+    <div class="w-1440 h-[90px] bg-black">
+        <div class="float-left">
+            <img class="w-[122px] h-[90px]" src="@/assets/images/logo.jpg">
+        </div>
+        <a class="float-right px-4 py-2 mt-[21px] mr-[20px] border rounded-2xl bg-white text-slate-500 ">Odhlásiť sa</a> 
+        <h1 class="text-white text-5xl text-center py-3 px-52">{{title}}</h1>   
+    </div>
+    <div class="flex py-32 px-32">
+        <img class="rounded-[20px]" src="@/assets/images/halova16.jpg">
+        <h1 class="text-3xl text-white absolute py-44 px-[400px]">Hálova 16, 85101, Bratislava-Petržalka</h1>
+            <div class="flex px-10">
+                <img class="h-8 m-2" src="@/assets/images/fullStar.png">
+                <img class="h-8 m-2" src="@/assets/images/emptyStar.png">
+                <img class="h-8 m-2" src="@/assets/images/emptyStar.png">
+                <img class="h-8 m-2" src="@/assets/images/emptyStar.png">
+                <img class="h-8 m-2" src="@/assets/images/emptyStar.png">
+            </div>
+    </div>
+    <h1 class="text-3xl text-white px-32">Odbory:</h1>
+
+    <div class="flex items-center py-10 gap-32 ">
+            <div class="bg-white rounded-[20px] hoverEffect">
+                <img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/elektrotechnika.jpg">
+                <h1 class="text-2xl text-center text-black  mt-10">Elektrotechnika</h1>
+            </div>
+            <div class="bg-white rounded-[20px] hoverEffect">
+                <img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/ist.jpg">
+                <h1 class="text-2xl text-center text-black mt-10">IST</h1>
+            </div>
+            <div class="bg-white rounded-[20px] hoverEffect">
+                <img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/pdt.jpg">
+                <h1 class="text-2xl text-center text-black mt-10">PDT</h1>
+            </div>
+            <div class="bg-white rounded-[20px] hoverEffect">
+                <img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/multimedia.jpg">
+                <h1 class="text-2xl text-center text-black mt-10">Multimédia</h1>
+            </div>
+            <div class="bg-white rounded-[20px] hoverEffect">        
+                <img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/obed.jpg">
+                <h1 class="text-2xl text-center text-black mt-10">Obed</h1>
+            </div>
+    </div>
+</div>
+
+  
+</template>
+
+<script>
+export default{
+data(){
+    return{
+        title: 'SPŠE Hálova 16'
+    }
+}
+
+}
+
+</script>
+
+
+

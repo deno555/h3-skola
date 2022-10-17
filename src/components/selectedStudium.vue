@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-zinc-800 h-screen">
+    <div class="bg-zinc-800  h-[100%]">
         <div class="w-1440 h-[90px] bg-black">
             <div class="float-left">
                 <a><img class="w-[62px] h-[38px] mt-[21px] ml-3" src="@/assets/images/Back.png"></a>

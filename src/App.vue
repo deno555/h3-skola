@@ -1,17 +1,16 @@
 <template>
-<selectedStudium></selectedStudium>
+<selectedSchool></selectedSchool>
 
 
 
 </template>
 
 <script>
-import selectedStudium from './components/selectedStudium.vue';
+import selectedSchool from './components/selectedSchool.vue';
 
 export default{
   components:{
-
-    selectedStudium
+    selectedSchool
 }
 }
 
