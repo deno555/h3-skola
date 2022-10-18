@@ -1,16 +1,15 @@
 <template>
-<selectedSchool></selectedSchool>
-
+<LunchRating></LunchRating>
 
 
 </template>
 
 <script>
-import selectedSchool from './components/selectedSchool.vue';
+import LunchRating from './components/lunchRating.vue';
 
 export default{
   components:{
-    selectedSchool
+    LunchRating
 }
 }
 
