@@ -11,6 +11,7 @@ import ChooseStudium from './components/chooseStudium.vue';
 //import RegisterForm from './components/registerForm.vue';
 //import SelectedSchool from './components/selectedSchool.vue';
 //import SelectedStudium from './components/selectedStudium.vue';
+//import RateSubject.vue from './components/rateSubject.vue';
 
 export default{
   components:{
@@ -19,7 +20,8 @@ export default{
     //LoginForm,
     //RegisterForm,
     //SelectedSchool,
-    //SelectedStudium
+    //SelectedStudium,
+    //RateSubject
   }
 }
 
