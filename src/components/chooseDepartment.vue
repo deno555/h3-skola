@@ -1,12 +1,6 @@
 <template>
-<div class="bg-zinc-800 h-[100%]">
-    <div class="w-1440 h-[90px] bg-black">
-        <div class="float-left">
-            <img class="w-[122px] h-[90px]" src="@/assets/images/logo.jpg">
-        </div>
-        <a class="float-right px-4 py-2 mt-[21px] mr-[20px] border rounded-2xl bg-white text-slate-500 ">Odhlásiť sa</a> 
-        <h1 class="text-white text-5xl text-center py-3 px-52">{{title}}</h1>   
-    </div>
+    <mainHeader>{{title}}</mainHeader>  
+
     <div class="flex py-32 px-32">
         <img class="rounded-[20px]" src="@/assets/images/halova16.jpg">
         <h1 class="text-3xl text-white absolute py-44 px-[400px]">Hálova 16, 85101, Bratislava-Petržalka</h1>
@@ -42,7 +36,6 @@
                 <h1 class="text-2xl text-center text-black mt-10">Obed</h1>
             </div>
     </div>
-</div>
 
   
 </template>
