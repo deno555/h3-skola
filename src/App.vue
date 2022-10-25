@@ -1,7 +1,5 @@
 <template>
-<ChooseSchoolType></ChooseSchoolType>
-
-
+  <component :is="currentView" />
 </template>
 
 <script>
@@ -23,7 +21,7 @@
     '/skoly/obedy': LunchRating,
     '/skoly/odbory':ChooseDepartment,
   }
-  
+
   export default{
     components:{
       ChooseSchoolType,
