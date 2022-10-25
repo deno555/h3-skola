@@ -40,7 +40,7 @@ export default{
       return routes[this.currentPath.slice(1) || '/'] || NotFound
     }
   },
-
+  
   mounted() {
     window.addEventListener('hashchange', () => {
 		  this.currentPath = window.location.hash
