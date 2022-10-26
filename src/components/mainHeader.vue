@@ -1,6 +1,6 @@
 <template>
     
-    <div class="bg-zinc-800 h-[100%]">
+    <div class="bg-zinc-800 h-screen">
         <div class="w-1440 h-[90px] bg-black">
             <div class="float-left">
                 <img class="w-[122px] h-[90px]" src="@/assets/images/logo.jpg">
