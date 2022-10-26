@@ -1,5 +1,5 @@
 <template>
-    <mainHeader>{{title}}</mainHeader>
+    <mainHeader/>
 
         <div class="grid justify-items-center py-10">
             <img src="@/assets/images/obedPic.jpg">
