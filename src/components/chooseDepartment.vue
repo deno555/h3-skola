@@ -1,5 +1,5 @@
 <template>
-    <mainHeader>{{title}}</mainHeader>  
+    <mainHeader/>  
 
     <div class="flex py-32 px-32">
         <img class="rounded-[20px]" src="@/assets/images/halova16.jpg">
@@ -41,15 +41,13 @@
 </template>
 
 <script>
+import mainHeader from './mainHeader.vue';
+
 export default{
-data(){
-    return{
-        title: 'SPŠE Hálova 16'
-    }
+    components:{
+        mainHeader,
+    },
 }
-
-}
-
 </script>
 
 

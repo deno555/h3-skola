@@ -20,12 +20,10 @@
     '/register': Register,
     '/skoly/obedy': LunchRating,
     '/skoly/odbory':ChooseDepartment,
+    //'/skoly/odbory/predmety': ChooseSubject
   }
 
   export default{
-    components:{
-      ChooseSchoolType,
-    },
     data() {
       return {
         currentPath: window.location.hash
