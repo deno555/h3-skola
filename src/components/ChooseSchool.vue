@@ -1,6 +1,6 @@
 <template>
     <mainHeader/>
-    
+    <div class="bg-zinc-800 flex justify-center pt-20 ">
     <div class="flex justify-center mt-24 mr-[60px]">
         <div class="grid grid-cols-3 gap-x-[200px] gap-y-[100px]">
             <div>
@@ -28,7 +28,8 @@
                 <p class="text-3xl text-white mt-5">Skola </p>
             </div>            
         </div>
-    </div>             
+    </div>   
+</div>
 </template>
 
 <script>

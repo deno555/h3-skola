@@ -1,6 +1,5 @@
 <template>
     
-    <div class="bg-zinc-800 h-screen">
         <div class="w-1440 h-[90px] bg-black">
             <div class="float-left">
                 <a href="#"><img class="w-[122px] h-[90px]" src="@/assets/images/logo.jpg"></a>
@@ -10,5 +9,4 @@
                 <input placeholder="Vyhľadávanie" class="icon text-center rounded-[50px] w-[350px] h-[40px] mt-[26px] ">    
             </div>
         </div>
-    </div>
 </template>

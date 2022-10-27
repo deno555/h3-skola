@@ -1,7 +1,6 @@
 <template>
-    <mainHeader>{{title}}</mainHeader>
-    
-    <div class=" flex justify-center mt-20 ">
+    <mainHeader />
+    <div class="bg-zinc-800 flex justify-center pt-20 ">
         <div>
             <a href="#/skoly"><img class="m-20 border rounded-[20px]" src="@/assets/images/picture.jpg"></a>
             <h2 class="ml-[160px] text-white text-3xl">Základná škola</h2>
@@ -15,6 +14,7 @@
             <h2 class="ml-[160px] text-white text-3xl">Vysoká škola</h2>
         </div>
     </div>
+
 </template>
 
 <script>
