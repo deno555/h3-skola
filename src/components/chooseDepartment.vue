@@ -1,7 +1,7 @@
 <template>
     <mainHeader/>  
 
-    <div class="flex py-32 px-32">
+    <div class="flex py-32 px-32 ">
         <img class="rounded-[20px]" src="@/assets/images/halova16.jpg">
         <h1 class="text-3xl text-white absolute py-44 px-[400px]">Hálova 16, 85101, Bratislava-Petržalka</h1>
             <div class="flex px-10">
@@ -16,23 +16,23 @@
 
     <div class="flex items-center py-10 gap-32 ">
             <div class="bg-white rounded-[20px] hoverEffect">
-                <img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/elektrotechnika.jpg">
+                <a href="#/skoly/odbory/predmety"><img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/elektrotechnika.jpg"></a>
                 <h1 class="text-2xl text-center text-black  mt-10">Elektrotechnika</h1>
             </div>
             <div class="bg-white rounded-[20px] hoverEffect">
-                <img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/ist.jpg">
+                <a href="#/skoly/odbory/predmety"><img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/ist.jpg"></a>
                 <h1 class="text-2xl text-center text-black mt-10">IST</h1>
             </div>
             <div class="bg-white rounded-[20px] hoverEffect">
-                <img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/pdt.jpg">
+                <a href="#/skoly/odbory/predmety"><img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/pdt.jpg"></a>
                 <h1 class="text-2xl text-center text-black mt-10">PDT</h1>
             </div>
             <div class="bg-white rounded-[20px] hoverEffect">
-                <img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/multimedia.jpg">
+                <a href="#/skoly/odbory/predmety"><img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/multimedia.jpg"></a>
                 <h1 class="text-2xl text-center text-black mt-10">Multimédia</h1>
             </div>
             <div class="bg-white rounded-[20px] hoverEffect">        
-                <img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/obed.jpg">
+                <a href="#/skoly/odbory/obedy"><img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/obed.jpg"></a>
                 <h1 class="text-2xl text-center text-black mt-10">Obed</h1>
             </div>
     </div>
@@ -49,6 +49,3 @@ export default{
     },
 }
 </script>
-
-
-

@@ -1,7 +1,7 @@
 <template>
     <mainHeader/>
     
-    <div class="flex justify-center mt-24 mr-[60px]">
+    <div class="flex justify-center mt-24 mr-[60px] bg-zinc">
         <div class="grid grid-cols-3 gap-x-[200px] gap-y-[100px]">
             <div>
                 <a href="#/skoly/odbory"><img class="border rounded-[25px] h-[250px] w-[300px]" src="@/assets/images/picture.jpg"></a>
