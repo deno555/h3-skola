@@ -1,6 +1,6 @@
 <template>
     <mainHeader/>  
-
+    <div class="bg-zinc-800 flex justify-center pt-20 ">
     <div class="flex py-32 px-32">
         <img class="rounded-[20px]" src="@/assets/images/halova16.jpg">
         <h1 class="text-3xl text-white absolute py-44 px-[400px]">Hálova 16, 85101, Bratislava-Petržalka</h1>
@@ -36,6 +36,7 @@
                 <h1 class="text-2xl text-center text-black mt-10">Obed</h1>
             </div>
     </div>
+</div>
 
   
 </template>
