@@ -1,7 +1,7 @@
 <template>
 
         <div class="grid h-screen bg-zinc-800 place-items-center text-center">
-            <div>
+            <div class="logincss">
             <h1 class="text-5xl text-white ">Prihlásenie</h1>
                     <input type="text" placeholder="Používateľké meno" class="p-3 w-[440px] rounded-3xl h-12 mt-8 ">
                         <br>
