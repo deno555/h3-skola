@@ -1,6 +1,6 @@
 <template>
     <mainHeader/>
-    <div class="bg-zinc-800 flex justify-center pt-20 ">
+    <div class="bg-zinc-800 flex justify-center pt-20">
         <div class="grid justify-items-center py-10">
             <img src="@/assets/images/obedPic.jpg">
             <h1 class="text-white text-3xl py-10">Obed</h1>

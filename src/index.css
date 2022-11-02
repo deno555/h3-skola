@@ -45,3 +45,35 @@
         overflow: hidden;
     }
 }
+
+/* (390x844) Iphone 12 Pro */
+
+@media only screen and (min-device-width: 390px) and (max-device-width: 844px) {
+
+    .RateSubjectcss{
+        width: 390px;
+        height: 844px;
+    }
+
+    .img{
+        justify-content: center;
+        width: 350px;
+    }
+
+    .subject{
+        margin-top: -100px;
+    }
+
+    .rate{
+        margin-top: 350px;
+    }
+
+    .button{
+        margin-top: 600px;
+        margin-left: -390px;
+        text-align: center;
+        height: 70px;
+        width: 290px;
+    }
+
+}
