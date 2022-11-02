@@ -1,5 +1,4 @@
 <template>
-
         <div class="grid h-screen bg-zinc-800 place-items-center text-center">
             <div class="logincss">
             <h1 class="text-5xl text-white ">Prihlásenie</h1>

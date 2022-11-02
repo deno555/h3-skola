@@ -16,10 +16,10 @@
   const routes = {
     '/': ChooseSchoolType,
     '/skoly': ChooseSchool,
-    '/rate':RateSubject,
+    '/skoly/odbory/predmety/rate':RateSubject,
     '/login': Login,
     '/register': Register,
-    '/skoly/obedy': LunchRating,
+    '/skoly/odbory/obedy': LunchRating,
     '/skoly/odbory':ChooseDepartment,
     '/skoly/odbory/predmety': ChooseSubject
   }

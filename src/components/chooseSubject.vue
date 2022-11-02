@@ -75,15 +75,16 @@
                     <h2 class="text-4xl text-white font-sans ml-[117px] mt-[10px]">EKN</h2>
                 </div>
             </div>
-    </div>
     
   
 </template>
 
 <script>
-import mainHeader from './mainHeader.vue';
+import mainHeader from '../components/mainHeader.vue'
 export default{
-    components:{mainHeader},
+    components:{
+        mainHeader
+    },
 data(){
     return{
         title: ' '
