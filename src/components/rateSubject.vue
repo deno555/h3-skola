@@ -1,5 +1,5 @@
 <template>    
-    <mainHeader/>
+<mainHeader/>
 <div class="bg-zinc-800 flex justify-center pt-20 ">
 
     <div class="grid justify-items-center py-10">
@@ -9,7 +9,7 @@
     <div class="text-white text-3xl grid justify-items-center mt-[-60px]">
         <div class="flex m-10">
             <h1 >Baví ma predmet:</h1>
-            <input type="checkbox" id="star1"><label for="star1"><img class="h-8 ml-5" src="@/assets/images/fullStar.png"></label>
+            <input type="checkbox" id="star1"><label for="star1"><img class="h-8 ml-5" @click="changeStar()" :src="src"></label>
             <input type="checkbox" id="star2"><label for="star2"><img class="h-8 ml-5" src="@/assets/images/fullStar.png"></label>
             <input type="checkbox" id="star3"><label for="star3"><img class="h-8 ml-5" src="@/assets/images/fullStar.png"></label>
             <input type="checkbox" id="star4"><label for="star4"><img class="h-8 ml-5" src="@/assets/images/fullStar.png"></label>
@@ -47,8 +47,23 @@ export default{
     },
     data(){
         return{
-            title: 'SPŠE Hálova 16'
+            checked:false,
+            count:1,
+            src:"https://cdn.discordapp.com/attachments/768503373363806218/1037355367417520138/fullStar.png",
         }
-    }
+    },
+
+    methods:{
+        changeStar(){
+            if(this.checked==true){
+                this.src="https://cdn.discordapp.com/attachments/768503373363806218/1037355367417520138/fullStar.png"
+                this.checked=false
+            }
+            else{
+                this.src="https://media.discordapp.net/attachments/768503373363806218/1037355367925043200/emptyStar.png"
+                this.checked=true
+            }
+        },
+    },
 }
 </script>
