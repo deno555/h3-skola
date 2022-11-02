@@ -13,3 +13,35 @@
     margin-top: -20px;
     transition: 0.5s;
 }
+
+
+/* (320x480) Smartphone, portrait */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .logincss {
+        zoom: 70%;
+        position: fixed;
+        overflow: hidden;
+    }
+    .registercss {
+        zoom: 70%;
+        position: fixed;
+        overflow: hidden;
+    }
+}
+
+
+/* (2048x1536) iPad 3 */
+
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) {
+    .logincss {
+        zoom: 120%;
+        position: fixed;
+        overflow: hidden;
+    }
+    .registercss {
+        zoom: 120%;
+        position: fixed;
+        overflow: hidden;
+    }
+}
