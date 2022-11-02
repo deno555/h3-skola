@@ -57,8 +57,119 @@
     }
 
     .subjects {
+        justify-content: center;
         display: block;
-        margin: -10px 0 0 8px;
+        margin-top: -10px;
+    }
+
+    .img {
+        margin-top: 50px;
+    }
+
+}
+
+/* (414x896) Iphone XR */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+
+    .chooseSubject {
+        display: block;
+        overflow: hidden;
+        height: 5500px;
+    }
+
+    .subjects {
+        display: block;
+        justify-content: center;
+        margin-top: -10px;
+    }
+
+    .img {
+        margin-top: 50px;
+    }
+
+}
+
+/* (375x667) Iphone SE */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+
+    .chooseSubject {
+        display: block;
+        overflow: hidden;
+        height: 5450px;
+    }
+
+    .subjects {
+        display: block;
+        justify-content: center;
+        margin-top: -10px;
+    }
+
+    .img {
+        margin-top: 50px;
+    }
+
+}
+
+/* (393x851) Pixel 5 */
+
+@media only screen and (min-device-width: 393px) and (max-device-width: 851px) {
+
+    .chooseSubject {
+        display: block;
+        overflow: hidden;
+        height: 5450px;
+    }
+
+    .subjects {
+        display: block;
+        justify-content: center;
+        margin-top: -10px;
+    }
+
+    .img {
+        margin-top: 50px;
+    }
+
+}
+
+/* (360x740) Samsung Galaxy S8+ */
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 740px) {
+
+    .chooseSubject {
+        display: block;
+        overflow: hidden;
+        height: 5450px;
+    }
+
+    .subjects {
+        display: block;
+        justify-content: center;
+        margin-top: -10px;
+    }
+
+    .img {
+        margin-top: 50px;
+    }
+
+}
+
+/* (412x915) Samsung Galaxy S20 Ultra */
+
+@media only screen and (min-device-width: 412px) and (max-device-width: 915px) {
+
+    .chooseSubject {
+        display: block;
+        overflow: hidden;
+        height: 5520px;
+    }
+
+    .subjects {
+        display: block;
+        justify-content: center;
+        margin-top: -10px;
     }
 
     .img {
