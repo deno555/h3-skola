@@ -9,7 +9,7 @@
     <div class="text-white text-3xl grid justify-items-center mt-[-60px]">
         <div class="flex m-10">
             <h1 >Baví ma predmet:</h1>
-            <input type="checkbox" id="star1"><label for="star1"><img class="h-8 ml-5" @click="changeStar()" :src="src"></label>
+            <!--input type="checkbox" id="star1"><label for="star1"--><img class="h-8 ml-5" @click="changeStar()" :src="src"><!--/label-->
             <input type="checkbox" id="star2"><label for="star2"><img class="h-8 ml-5" src="@/assets/images/fullStar.png"></label>
             <input type="checkbox" id="star3"><label for="star3"><img class="h-8 ml-5" src="@/assets/images/fullStar.png"></label>
             <input type="checkbox" id="star4"><label for="star4"><img class="h-8 ml-5" src="@/assets/images/fullStar.png"></label>
