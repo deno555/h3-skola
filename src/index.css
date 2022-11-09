@@ -5,7 +5,7 @@
     background: url("@/assets/images/Search.png") no-repeat left;
     background-color: white;
     background-size: 20px;
-    background-position-x: 28%;
+    background-position-x: 37%;
 }
 
 .hoverEffect:hover {
@@ -46,194 +46,164 @@
     }
 }
 
+
 /* (390x844) Iphone 12 Pro */
 
 @media only screen and (min-device-width: 390px) and (max-device-width: 844px) {
-
     .chooseSubject {
         display: block;
         overflow: hidden;
         height: 5450px;
     }
-
     .subjects {
         position: relative;
         display: block;
         justify-content: center;
         margin-top: 120px 0 0 0;
     }
-
     .img {
         margin: 50px auto 0 auto;
     }
-
     .img1 {
         margin: 0 auto 0 auto;
     }
-
     .txt {
         text-align: center;
         margin-left: 0;
     }
-
 }
+
 
 /* (414x896) Iphone XR */
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
-
     .chooseSubject {
         display: block;
         overflow: hidden;
         height: 5500px;
     }
-
     .subjects {
         position: relative;
         display: block;
         justify-content: center;
         margin-top: 120px 0 0 0;
     }
-
     .img {
         margin: 50px auto 0 auto;
     }
-
     .img1 {
         margin: 0 auto 0 auto;
     }
-
     .txt {
         text-align: center;
         margin-left: 0;
     }
-
 }
+
 
 /* (375x667) Iphone SE */
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-
     .chooseSubject {
         display: block;
         overflow: hidden;
         height: 5450px;
     }
-
     .subjects {
         position: relative;
         display: block;
         justify-content: center;
         margin-top: 120px 0 0 0;
     }
-
     .img {
         margin: 50px auto 0 auto;
     }
-
     .img1 {
         margin: 0 auto 0 auto;
     }
-
     .txt {
         text-align: center;
         margin-left: 0;
     }
-
 }
+
 
 /* (393x851) Pixel 5 */
 
 @media only screen and (min-device-width: 393px) and (max-device-width: 851px) {
-
     .chooseSubject {
         display: block;
         overflow: hidden;
         height: 5450px;
     }
-
     .subjects {
         position: relative;
         display: block;
         justify-content: center;
         margin-top: 120px 0 0 0;
     }
-
     .img {
         margin: 50px auto 0 auto;
     }
-
     .img1 {
         margin: 0 auto 0 auto;
     }
-
     .txt {
         text-align: center;
         margin-left: 0;
     }
-
 }
+
 
 /* (360x740) Samsung Galaxy S8+ */
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 740px) {
-
     .chooseSubject {
         display: block;
         overflow: hidden;
         height: 5450px;
     }
-
     .subjects {
         position: relative;
         display: block;
         justify-content: center;
         margin: 120px 0 0 0;
     }
-
     .img {
         margin: 50px auto 0 auto;
     }
-
     .img1 {
         margin: 0 auto 0 auto;
     }
-
     .txt {
         text-align: center;
         margin-left: 0;
     }
-
 }
+
 
 /* (412x915) Samsung Galaxy S20 Ultra */
 
 @media only screen and (min-device-width: 412px) and (max-device-width: 915px) {
-
     .chooseSubject {
         display: block;
         overflow: hidden;
         height: 5520px;
     }
-
     .subjects {
         position: relative;
         display: block;
         justify-content: center;
         margin-top: 120px 0 0 0;
     }
-
     .img {
         margin: 50px auto 0 auto;
     }
-
     .img1 {
         margin: 0 auto 0 auto;
     }
-
     .txt {
         text-align: center;
         margin-left: 0;
     }
-
 }
