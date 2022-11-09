@@ -9,7 +9,10 @@
     <div class="text-white text-3xl grid justify-items-center mt-[-60px]">
         <div class="flex m-10">
             <h1 >Baví ma predmet:</h1>
-            <img class="h-8 ml-5" @click="changeStar()" :src="src" v-for="n in 5" :key="n">
+            <div v-for="star in stars" :key="star.id">
+            {{star.full}}
+            {{star.empty}}
+        </div>
         </div>
         <div class="flex m-10">
             <h1 >Prístup učiteľa:</h1>
@@ -28,6 +31,12 @@
 
 <script>
 import mainHeader from './mainHeader.vue';
+class Star{
+    constructor(full,empty){
+        this.full = full;
+        this.empty = empty;
+    }
+}
 
 export default{
     components:{
@@ -35,22 +44,14 @@ export default{
     },
     data(){
         return{
-            checked:false,
-            src:"https://cdn.discordapp.com/attachments/768503373363806218/1037355367417520138/fullStar.png",
+            stars:[
+                new Star(
+                    require('@/assets/images/ELK.jpg'),
+                    'kokot'
+                )
+            ]
         }
-    },
 
-    methods:{
-        changeStar(){
-            if(this.checked==true){
-                this.src="https://cdn.discordapp.com/attachments/768503373363806218/1037355367417520138/fullStar.png"
-                this.checked=false
-            }
-            else{
-                this.src="https://media.discordapp.net/attachments/768503373363806218/1037355367925043200/emptyStar.png"
-                this.checked=true
-            }
-        },
-    },
+}
 }
 </script>

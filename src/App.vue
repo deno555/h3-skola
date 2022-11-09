@@ -12,6 +12,8 @@
   import RateSubject from './components/rateSubject.vue';
   import NotFound from './components/notFound.vue';
   import ChooseSubject from './components/chooseSubject.vue';
+  import test from './components/test.vue'
+  
 
   const routes = {
     '/': ChooseSchoolType,
@@ -21,7 +23,8 @@
     '/register': Register,
     '/skoly/odbory/obedy': LunchRating,
     '/skoly/odbory':ChooseDepartment,
-    '/skoly/odbory/predmety': ChooseSubject
+    '/skoly/odbory/predmety': ChooseSubject,
+    '/test': test 
   }
 
   export default{
