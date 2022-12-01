@@ -13,7 +13,7 @@
   import 'vue-awesome/icons/star-o'
 
   import Icon from 'vue-awesome/components/Icon'
-
+//test
   export default {
     components: { Icon },   
      
