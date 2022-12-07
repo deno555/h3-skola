@@ -19,6 +19,11 @@
             <h1 >Naučil som sa:</h1>
             <starRating/>
         </div> 
+        <div class="flex m-10">
+            <h1 >Zaujimavy vyklad:</h1>
+            <starRating/>
+        </div> 
+        
     </div>
     <div class="grid justify-items-center py-10">
         <button class="text-2xl text-white border-2 rounded-[5px] border-lime-900 bg-lime-900 pl-20 pr-20 pt-2 pb-2">Ohodnotiť</button>

@@ -12,9 +12,9 @@
                     <img class="h-8 m-2" src="@/assets/images/emptyStar.png">
                 </div>
         </div>
-        <h1 class="text-3xl text-white px-32">Odbory:</h1>
-
-        <div class="flex items-center py-10 gap-32 ">
+        <h1 class="text-3xl text-white px-32 odboris-nadpis">Odbory:</h1>
+        
+        <div class="flex items-center py-10 gap-32 odboris ">
                 <div class="bg-white rounded-[20px] hoverEffect">
                     <a href="#/skoly/odbory/predmety"><img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/elektrotechnika.jpg"></a>
                     <h1 class="text-2xl text-center text-black  mt-10">Elektrotechnika</h1>
