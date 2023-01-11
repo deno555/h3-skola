@@ -10,8 +10,12 @@
 
 .hoverEffect:hover {
     position: static;
-    margin-top: -20px;
-    transition: 0.5s;
+    margin-top: -40px;
+    transition: 0.75s;
+}
+
+.odboris {
+    justify-content: center;
 }
 
 

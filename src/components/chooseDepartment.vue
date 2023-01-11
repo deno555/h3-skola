@@ -15,25 +15,25 @@
         <h1 class="text-3xl text-white px-32 odboris-nadpis">Odbory:</h1>
         
         <div class="flex items-center py-10 gap-32 odboris ">
-                <div class="bg-white rounded-[20px] hoverEffect">
-                    <a href="#/skoly/odbory/predmety"><img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/elektrotechnika.jpg"></a>
-                    <h1 class="text-2xl text-center text-black  mt-10">Elektrotechnika</h1>
+                <div class="bg-white rounded-[20px] hoverEffect mr-4">
+                    <a href="#/skoly/odbory/predmety"><img class="rounded-[20px] w-[300px] h-[300px]" src="@/assets/images/elektrotechnika.jpg"></a>
+                    <h1 class="text-2xl text-center text-black font-semibold mt-5 mb-5">Elektrotechnika</h1>
                 </div>
-                <div class="bg-white rounded-[20px] hoverEffect">
-                    <a href="#/skoly/odbory/predmety"><img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/ist.jpg"></a>
-                    <h1 class="text-2xl text-center text-black mt-10">IST</h1>
+                <div class="bg-white rounded-[20px] hoverEffect mr-4">
+                    <a href="#/skoly/odbory/predmety"><img class="rounded-[20px] w-[300px] h-[300px]" src="@/assets/images/ist.jpg"></a>
+                    <h1 class="text-2xl text-center text-black font-semibold mt-5 mb-5">IST</h1>
                 </div>
-                <div class="bg-white rounded-[20px] hoverEffect">
-                    <a href="#/skoly/odbory/predmety"><img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/pdt.jpg"></a>
-                    <h1 class="text-2xl text-center text-black mt-10">PDT</h1>
+                <div class="bg-white rounded-[20px] hoverEffect mr-4">
+                    <a href="#/skoly/odbory/predmety"><img class="rounded-[20px] w-[300px] h-[300px]" src="@/assets/images/pdt.jpg"></a>
+                    <h1 class="text-2xl text-center text-black font-semibold mt-5 mb-5">PDT</h1>
                 </div>
-                <div class="bg-white rounded-[20px] hoverEffect">
-                    <a href="#/skoly/odbory/predmety"><img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/multimedia.jpg"></a>
-                    <h1 class="text-2xl text-center text-black mt-10">Multimédia</h1>
+                <div class="bg-white rounded-[20px] hoverEffect mr-4">
+                    <a href="#/skoly/odbory/predmety"><img class="rounded-[20px] w-[300px] h-[300px]" src="@/assets/images/multimedia.jpg"></a>
+                    <h1 class="text-2xl text-center text-black font-semibold mt-5 mb-5">Multimédia</h1>
                 </div>
                 <div class="bg-white rounded-[20px] hoverEffect">        
-                    <a href="#/skoly/odbory/obedy"><img class="rounded-[20px] w-[350px] h-[350px]" src="@/assets/images/obed.jpg"></a>
-                    <h1 class="text-2xl text-center text-black mt-10">Obed</h1>
+                    <a href="#/skoly/odbory/obedy"><img class="rounded-[20px] w-[300px] h-[300px]" src="@/assets/images/obed.jpg"></a>
+                    <h1 class="text-2xl text-center text-black font-semibold mt-5 mb-5">Obed</h1>
                 </div>
         </div>
     </div>

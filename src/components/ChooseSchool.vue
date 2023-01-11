@@ -1,6 +1,6 @@
 <template>
     <mainHeader/>
-    <div class="bg-zinc-800 flex justify-center pt-20 h-screen">
+    <div class="bg-zinc-800 flex justify-center pt-20 h-[1000px] bg-auto">
     <div class="grid justify-center absolute mt-[-95px]">
         <input placeholder="Vyhľadávanie" class="icon text-center rounded-[50px] w-[500px] h-[40px] mt-[-50px]" v-model="search">
     </div>

@@ -1,6 +1,6 @@
 <template>
     <mainHeader />
-    <div class="bg-zinc-800 flex justify-center pt-20 ">
+    <div class="bg-zinc-800 flex justify-center pt-20 h-screen overflow-y-hidden bg-auto">
         <div>
             <a href="#/skoly"><img class="m-20 border rounded-[20px]" src="@/assets/images/picture.jpg"></a>
             <h2 class="ml-[160px] text-white text-3xl">Základná škola</h2>
