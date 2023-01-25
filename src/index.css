@@ -57,18 +57,24 @@
     .chooseSubject {
         display: block;
         overflow: hidden;
-        height: 5450px;
+        height: 5850px;
     }
     .subjects {
         position: relative;
         display: block;
-        justify-content: center;
-        margin-top: 120px 0 0 0;
+        margin: 80px 0 0 0;
+    }
+    .fix{
+        margin-left: 0;
     }
     .img {
+        height: 250px;
+        width: 250px;
         margin: 50px auto 0 auto;
     }
     .img1 {
+        height: 250px;
+        width: 250px;
         margin: 0 auto 0 auto;
     }
     .txt {
@@ -84,18 +90,26 @@
     .chooseSubject {
         display: block;
         overflow: hidden;
-        height: 5500px;
+        height: 5850px;
     }
     .subjects {
         position: relative;
         display: block;
-        justify-content: center;
-        margin-top: 120px 0 0 0;
+        margin: 80px 0 0 0;
+    }
+    .fix{
+        margin-left: 0;
     }
     .img {
+        height: 250px;
+        width: 250px;
         margin: 50px auto 0 auto;
     }
     .img1 {
+        
+        height: 250px;
+        width: 250px;height: 250px;
+        width: 250px;
         margin: 0 auto 0 auto;
     }
     .txt {
@@ -111,18 +125,24 @@
     .chooseSubject {
         display: block;
         overflow: hidden;
-        height: 5450px;
+        height: 5850px;
     }
     .subjects {
         position: relative;
         display: block;
-        justify-content: center;
-        margin-top: 120px 0 0 0;
+        margin: 80px 0 0 0;
+    }
+    .fix{
+        margin-left: 0;
     }
     .img {
+        height: 250px;
+        width: 250px;
         margin: 50px auto 0 auto;
     }
     .img1 {
+        height: 250px;
+        width: 250px;
         margin: 0 auto 0 auto;
     }
     .txt {
@@ -138,18 +158,24 @@
     .chooseSubject {
         display: block;
         overflow: hidden;
-        height: 5450px;
+        height: 5850px;
     }
     .subjects {
         position: relative;
         display: block;
-        justify-content: center;
-        margin-top: 120px 0 0 0;
+        margin: 80px 0 0 0;
+    }
+    .fix{
+        margin-left: 0;
     }
     .img {
+        height: 250px;
+        width: 250px;
         margin: 50px auto 0 auto;
     }
     .img1 {
+        height: 250px;
+        width: 250px;
         margin: 0 auto 0 auto;
     }
     .txt {
@@ -165,18 +191,24 @@
     .chooseSubject {
         display: block;
         overflow: hidden;
-        height: 5450px;
+        height: 5850px;
     }
     .subjects {
         position: relative;
         display: block;
-        justify-content: center;
-        margin: 120px 0 0 0;
+        margin: 80px 0 0 0;
+    }
+    .fix{
+        margin-left: 0;
     }
     .img {
+        height: 250px;
+        width: 250px;
         margin: 50px auto 0 auto;
     }
     .img1 {
+        height: 250px;
+        width: 250px;
         margin: 0 auto 0 auto;
     }
     .txt {
@@ -192,18 +224,24 @@
     .chooseSubject {
         display: block;
         overflow: hidden;
-        height: 5520px;
+        height: 5930px;
     }
     .subjects {
         position: relative;
         display: block;
-        justify-content: center;
-        margin-top: 120px 0 0 0;
+        margin: 80px 0 0 0;
+    }
+    .fix{
+        margin-left: 0;
     }
     .img {
+        height: 250px;
+        width: 250px;
         margin: 50px auto 0 auto;
     }
     .img1 {
+        height: 250px;
+        width: 250px;
         margin: 0 auto 0 auto;
     }
     .txt {
