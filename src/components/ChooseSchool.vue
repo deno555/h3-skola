@@ -1,6 +1,6 @@
 <template>
     <mainHeader/>
-    <div class="bg-zinc-800 flex justify-center pt-20 h-screen">
+    <div class="bg-zinc-800 flex justify-center pt-20 h-[1000px] bg-auto">
     <div class="grid justify-center absolute mt-[-95px]">
         <input placeholder="Vyhľadávanie" class="icon text-center rounded-[50px] w-[500px] h-[40px] mt-[-50px]" v-model="search">
     </div>
@@ -12,22 +12,12 @@
             </div>-->
 
             <div v-for="schoolNames in schools2" :key="schoolNames.id">
+                <a href="#/"><img :src="schoolNames.file_path"></a>
                 <p class="text-3xl text-white mt-5">{{schoolNames.name}}</p>
-                <p class="text-3xl text-white mt-5">test</p>
-            </div>
-
-            <p>test1</p>
-                   
-
-            <div v-for="post in posts" :key="post.id">
-                <h2>{{ post.id }} {{ post.title }}</h2>
-                <p>{{ post.body }}</p>
             </div>
         </div>
     </div>   
 </div>
-
-<div>{{schoolName}}</div>
 </template>
 
 <script>
@@ -35,13 +25,6 @@
 import mainHeader from './mainHeader.vue';
 import axios from 'axios';
 
-class School{
-    constructor(title,img,link){
-        this.title = title;
-        this.img = img;
-        this.link = link;
-    }
-}
 export default{
     components:{
         mainHeader,
@@ -51,46 +34,8 @@ export default{
             title: 'SPŠE Hálova 16',
             search: '',
             id:null,
-            schoolName:null,
-            schools:[
-                new School(
-                    'Skola 1',
-                    require('@/assets/images/picture.jpg'),
-                    '#/skoly/odbory'
-                ),
-                new School(
-                    'Skola 2',
-                    require('@/assets/images/picture.jpg'),
-                    '#/skoly/odbory'
-
-                ),
-                new School(
-                    'Skola 3',
-                    require('@/assets/images/picture.jpg'),
-                    '#/skoly/odbory'
-
-                ),
-                new School(
-                    'Skola 4',
-                    require('@/assets/images/picture.jpg'),
-                    '#/skoly/odbory'
-                ),
-                new School(
-                    'Skola 5',
-                    require('@/assets/images/picture.jpg'),
-                    '#/skoly/odbory'
-
-                ),
-                new School(
-                    'Skola 6',
-                    require('@/assets/images/picture.jpg'),
-                    '#/skoly/odbory'
-
-                )
-            ],
             schools2:[],
-            posts:[],
-
+            img: '',
             
         }
     },
@@ -102,7 +47,12 @@ export default{
     },
     mounted(){
         axios
-            .get('http://127.0.0.1:8000/api/schools').then((response) => this.schools2 = response.data)
+            .get('http://127.0.0.1:8000/api/schools').then((response) => 
+            {this.schools2 = response.data
+                this.img = JSON.stringify(response.data[0].file_path)
+            });
+        axios 
+            .get(`http://127.0.0.1:8000/storage/images/${this.img}`).then((response) => {this.school = response})
     }
 }
 
