@@ -12,7 +12,10 @@
             </div>-->
 
             <div v-for="schoolNames in schools2" :key="schoolNames.id">
-                <a href="#/"><img :src="schoolNames.file_path"></a>
+                <a href="#/skoly/odbory">
+                    <img v-bind:src="'http://127.0.0.1:8000/storage/images/' + schoolNames.file_path">
+                </a>
+                <!-- <p>{{ schoolNames.file_path }}</p> -->
                 <p class="text-3xl text-white mt-5">{{schoolNames.name}}</p>
             </div>
         </div>
@@ -36,7 +39,8 @@ export default{
             id:null,
             schools2:[],
             img: '',
-            
+            schoolImg:[],
+
         }
     },
 
@@ -48,11 +52,12 @@ export default{
     mounted(){
         axios
             .get('http://127.0.0.1:8000/api/schools').then((response) => 
-            {this.schools2 = response.data
-                this.img = JSON.stringify(response.data[0].file_path)
+            {
+                this.schools2 = response.data
+                //this.img = JSON.stringify(response.data[0].file_path)
             });
         axios 
-            .get(`http://127.0.0.1:8000/storage/images/${this.img}`).then((response) => {this.school = response})
+            .get('http://127.0.0.1:8000/api/schools').then((response) => {this.schoolImg = response.data.file_path})
     }
 }
 

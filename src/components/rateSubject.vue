@@ -42,30 +42,5 @@ export default{
         mainHeader,
         starRating,
     },
-    data(){
-        return{
-            checked:false,
-            src:"https://cdn.discordapp.com/attachments/768503373363806218/1037355367417520138/fullStar.png",
-            starID:{
-                star1:1,
-                star2:2,
-                star3:3,
-                star4:4,
-                star5:5}
-        }
-    },
-
-    methods:{
-        changeStarState(){
-            if(this.checked==true){
-                this.src="https://cdn.discordapp.com/attachments/768503373363806218/1037355367417520138/fullStar.png"
-                this.checked=false
-            }
-            else{
-                this.src="https://media.discordapp.net/attachments/768503373363806218/1037355367925043200/emptyStar.png"
-                this.checked=true
-            }
-        },
-    },
 }
 </script>
