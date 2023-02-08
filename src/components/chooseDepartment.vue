@@ -1,6 +1,6 @@
 <template>
     <mainHeader/>  
-    <div class="bg-zinc-800 ">
+    <div class="bg-zinc-800 h-[101vh]">
         <starRating/>
         
         <div class="flex py-32 px-32">
