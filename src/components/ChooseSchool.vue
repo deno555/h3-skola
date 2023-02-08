@@ -11,9 +11,9 @@
                 <p class="text-3xl text-white mt-5">{{school.title}}</p>
             </div>-->
 
-            <div v-for="schoolNames in schools2" :key="schoolNames.id">
+            <div v-for="schoolNames in schools" :key="schoolNames.id">
                 <a href="#/skoly/odbory">
-                    <img v-bind:src="'http://127.0.0.1:8000/storage/images/' + schoolNames.file_path">
+                    <img :src="'http://127.0.0.1:8000/storage/images/' + schoolNames.file_path">
                 </a>
                 <!-- <p>{{ schoolNames.file_path }}</p> -->
                 <p class="text-3xl text-white mt-5">{{schoolNames.name}}</p>
@@ -34,30 +34,17 @@ export default{
     },
     data(){
         return{
-            title: 'SPŠE Hálova 16',
-            search: '',
-            id:null,
-            schools2:[],
-            img: '',
-            schoolImg:[],
-
+            schools:[],
         }
     },
 
-    computed:{
-        filteredSchools(){
-            return this.schools.filter(school => school.title.toLowerCase().includes(this.search.toLowerCase()))
-        }
-    },
     mounted(){
         axios
             .get('http://127.0.0.1:8000/api/schools').then((response) => 
             {
-                this.schools2 = response.data
+                this.schools = response.data
                 //this.img = JSON.stringify(response.data[0].file_path)
             });
-        axios 
-            .get('http://127.0.0.1:8000/api/schools').then((response) => {this.schoolImg = response.data.file_path})
     }
 }
 
