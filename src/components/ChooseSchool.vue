@@ -45,6 +45,10 @@ export default{
                 this.schools = response.data
                 //this.img = JSON.stringify(response.data[0].file_path)
             });
+        axios
+            .put('http://127.0.0.1:8000/api/schools/{id}', {
+                name:'skola2'
+            })
     }
 }
 

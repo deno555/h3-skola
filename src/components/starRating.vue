@@ -44,6 +44,7 @@
           star >= 0
         )
           this.stars = this.stars === star ? star - 1 : star
+          console.log(this.stars)
       }
     }
   }
