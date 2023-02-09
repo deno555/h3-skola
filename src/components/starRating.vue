@@ -2,7 +2,7 @@
   <div class="rating">
     <ul class="list">
       <li :key="star" v-for="star in maxStars" :class="{ 'active': star <= stars }" @click="rate(star)" class="star">
-        <icon scale="2" :name="star <= stars ? 'star' : 'star-o'"/>
+        <icon scale="2.5" :name="star <= stars ? 'star' : 'star-o'"/>
       </li>
     </ul>
   </div>
@@ -70,6 +70,7 @@
   .star {
     display: inline-block;
     cursor: pointer;
+    padding-right: 5px;
     &:hover {
       &~.star {
         &:not(.active) {

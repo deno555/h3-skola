@@ -1,11 +1,10 @@
 <template>
     <mainHeader/>  
-    <div class="bg-zinc-800 h-[101vh]">
-        <starRating/>
-        
+    <div class="bg-zinc-800 ">        
         <div class="flex py-32 px-32">
             <img class="rounded-[20px]" src="@/assets/images/halova16.jpg">
             <h1 class="text-3xl text-white absolute py-44 px-[400px]">Hálova 16, 85101, Bratislava-Petržalka</h1>
+            <div class="hviezdy-styl"><starRating/></div>
         </div>
         
         <h1 class="text-3xl text-white px-32 odboris-nadpis">Odbory:</h1>
@@ -55,3 +54,11 @@ export default{
     }
 }
 </script>
+
+<style>
+    .hviezdy-styl{
+        z-index: 2;
+        padding-left: 50px;   
+        padding-top: 10px; 
+    }
+</style>
