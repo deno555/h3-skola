@@ -1,82 +1,62 @@
 <template>
-    <mainHeader/>
-    <div class="bg-zinc-800 flex justify-center pt-20 h-screen">
-    <div class="grid justify-center absolute mt-[-95px]">
-        <input placeholder="Vyhľadávanie" class="icon text-center rounded-[50px] w-[500px] h-[40px] mt-[-50px]" v-model="search">
-    </div>
-    <div class="flex mt-24 mr-[60px]">
-        <div class="grid grid-cols-3 gap-x-[200px] gap-y-[100px] " >
-            <div v-for="school in filteredSchools" :key="school.id">
-                <a v-bind:href="school.link"><img class="border rounded-[25px] h-[250px] w-[300px]" v-bind:src="school.img"></a>
-                <p class="text-3xl text-white mt-5">{{school.title}}</p>
-            </div>
-                   
+    <h1>test</h1>
+    <!-- <div v-for="post in posts" :key="post.id">
+        <router-link :to="{params: {id: post.id}, name: 'test2'}">{{ post.title }}</router-link>    
+    </div> -->
+
+    <div class="flex justify-center ">
+        <div>
+            <router-link :to="{params: {id: 'ZS'}, name: 'test2'}">
+                <img class="m-20 border rounded-[20px]" src="@/assets/images/picture.jpg">
+            </router-link>
+            <h2 class="ml-[160px] text-white text-3xl">Základná</h2>
         </div>
-    </div>   
-</div>
+
+        <div>
+            <router-link :to="{params: {id: 'SS'}, name: 'test2'}">
+                <img class="m-20 border rounded-[20px]" src="@/assets/images/picture.jpg">
+            </router-link>
+            <h2 class="ml-[160px] text-white text-3xl">Stredna</h2>
+        </div>
+
+        <div>
+            <router-link :to="{params: {id: 'VS'}, name: 'test2'}">
+                <img class="m-20 border rounded-[20px]" src="@/assets/images/picture.jpg">
+            </router-link>
+            <h2 class="ml-[160px] text-white text-3xl">Vysoka</h2>
+        </div>
+    </div>
 </template>
 
-<script>
-import mainHeader from './mainHeader.vue';
-class School{
-    constructor(title,img,link){
-        this.title = title;
-        this.img = img;
-        this.link = link;
+    <!-- <script>
+
+        export default{
+            data(){
+                return{
+                    posts:[
+                        {
+                            type: 'ZS',
+                            title: 'ZS',
+                            body: 'toto je 1',
+                        },
+                        {
+                            type: 'SS',
+                            title: 'SS',
+                            body: 'toto je 2',
+                        },
+                        {
+                            type: 'VS',
+                            title: 'VS',
+                            body: 'toto je 3',
+                        }
+                    ]
+                }
+            }
+        }
+    </script> -->
+
+<style>
+    body{
+        color: white;
     }
-}
-export default{
-    components:{
-        mainHeader,
-    },
-data(){
-    return{
-        title: 'SPŠE Hálova 16',
-        search: '',
-        schools:[
-            new School(
-                'Skola 1',
-                require('@/assets/images/picture.jpg'),
-                '#/skoly/odbory'
-            ),
-            new School(
-                'Skola 2',
-                require('@/assets/images/picture.jpg'),
-                '#/skoly/odbory'
-
-            ),
-            new School(
-                'Skola 3',
-                require('@/assets/images/picture.jpg'),
-                '#/skoly/odbory'
-
-            ),
-            new School(
-                'Skola 4',
-                require('@/assets/images/picture.jpg'),
-                '#/skoly/odbory'
-            ),
-            new School(
-                'Skola 5',
-                require('@/assets/images/picture.jpg'),
-                '#/skoly/odbory'
-
-            ),
-            new School(
-                'Skola 6',
-                require('@/assets/images/picture.jpg'),
-                '#/skoly/odbory'
-
-            )
-        ]
-    }
-},
-computed:{
-    filteredSchools(){
-        return this.schools.filter(school => school.title.toLowerCase().includes(this.search.toLowerCase()))
-    }
-}
-}
-
-</script>
-
+</style>

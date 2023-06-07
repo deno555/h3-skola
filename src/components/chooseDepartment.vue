@@ -1,31 +1,29 @@
 <template>
-    <mainHeader/>  
+    <mainHeader>
+        <div class="text-5xl">
+            {{this.$route.params.name}}   
+        </div>
+    </mainHeader>
     <div class="bg-zinc-800 ">        
         <div class="flex py-32 px-32">
             <img class="rounded-[20px]" src="@/assets/images/halova16.jpg">
-            <h1 class="text-3xl text-white absolute py-44 px-[400px]">Hálova 16, 85101, Bratislava-Petržalka</h1>
             <div class="hviezdy-styl"><starRating/></div>
+            <div class="text-3xl text-white absolute py-44 px-[400px]" v-for="schoolAddress in schools.filter(school=> school.name === this.$route.params.name)" :key="schoolAddress.id">
+                <p class="text-3xl text-white mt-5">{{schoolAddress.address}}</p>
+            </div>
         </div>
         
         <h1 class="text-3xl text-white px-32 odboris-nadpis">Odbory:</h1>
         
-        <div class="flex items-center py-10 gap-32 odboris ">
-                <div class="bg-white rounded-[20px] hoverEffect mr-4" v-for="departments in schoolDepartments" :key="departments.id">
-                    <a href="#/skoly/odbory/predmety">
-                        <img :src="'http://127.0.0.1:8000/storage/images/' + departments.file_path" class="rounded-[20px] w-[300px] h-[300px]">
-                    </a>
+        <div class="flex items-center py-10 gap-32 odboris" v-for="school in schools.filter(school=> school.name === this.$route.params.name)" :key="school.id">
+            <div class="bg-white rounded-[20px] hoverEffect mr-4" v-for="departments in schoolDepartments.filter(department => department.school_id === school.id)" :key="departments.id">
+                <router-link :to="{name: 'chooseSubject', params:{department: departments.name}}">
+                    <img :src="'http://127.0.0.1:8000/storage/images/' + departments.file_path" class="rounded-[20px] w-[300px] h-[300px]">
                     <h1 class="text-2xl text-center text-black font-semibold mt-5 mb-5">{{departments.name}}</h1>
-                </div>
-
-                <div class="bg-white rounded-[20px] hoverEffect mr-4">
-                    <a href="#/skoly/odbory/predmety">
-                        <img src="https://as1.ftcdn.net/v2/jpg/02/48/42/64/1000_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg" class="rounded-[20px] w-[300px] h-[300px]">
-                    </a>
-                    <h1 class="text-2xl text-center text-black font-semibold mt-5 mb-5">test 1</h1>
-                </div>
+                </router-link>
+            </div>
         </div>
     </div>
-  
 </template>
 
 <script>
@@ -42,16 +40,21 @@ export default{
     data(){
         return{
             schoolDepartments:[],
+            schools:[],
         }
     },
 
     mounted(){
-        axios
-            .get('http://127.0.0.1:8000/api/fields').then((response) => 
-            {
-                this.schoolDepartments = response.data
-            })
-    }
+        axios.get('http://127.0.0.1:8000/api/fields').then((response) =>
+        {
+            this.schoolDepartments = response.data
+        });
+
+        axios.get('http://127.0.0.1:8000/api/schools').then((response) => 
+        {
+            this.schools = response.data
+        });
+    },
 }
 </script>
 

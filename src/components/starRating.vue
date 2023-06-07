@@ -1,10 +1,13 @@
 <template>
-  <div class="rating">
-    <ul class="list">
-      <li :key="star" v-for="star in maxStars" :class="{ 'active': star <= stars }" @click="rate(star)" class="star">
-        <icon scale="2.5" :name="star <= stars ? 'star' : 'star-o'"/>
-      </li>
-    </ul>
+  <div class="flex pt-5 m-6" id="subject_rating">
+    <h1>{{ rateTheme }}</h1>
+    <div class="rating">
+      <ul class="list" >
+        <li :key="star" v-for="star in maxStars" :class="{ 'active': star <= stars }" @click="rate(star)" class="star">
+          <icon scale="2.5" :name="star <= stars ? 'star' : 'star-o'"/>
+        </li> 
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -13,7 +16,7 @@
   import 'vue-awesome/icons/star-o'
 
   import Icon from 'vue-awesome/components/Icon'
-//test
+  
   export default {
     components: { Icon },   
      
@@ -29,11 +32,14 @@
       hasCounter: {
         type: Boolean,
         default: true
-      }
+      },
+      rateTheme: {
+        type: String,
+      },
     },
     data() {
       return {
-        stars: this.grade
+        stars: this.grade,
       }
     },
     methods: {
@@ -44,9 +50,10 @@
           star >= 0
         )
           this.stars = this.stars === star ? star - 1 : star
-          console.log(this.stars)
-      }
-    }
+
+          this.$emit("sendingStar", this.stars)
+      },
+    },
   }
 </script>
 
