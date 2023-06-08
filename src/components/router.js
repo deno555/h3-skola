@@ -56,11 +56,6 @@ const routes = [
       path: '/test2/:id',
       name: 'test2',
       component: () => import('@/components/test2.vue')
-    },
-    {
-      path:'/dateTest',
-      name: 'dateTest',
-      component: () => import('@/components/datestest.vue')
     }
   ];
 

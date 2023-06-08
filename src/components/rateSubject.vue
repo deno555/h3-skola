@@ -19,7 +19,9 @@
     </div>
 
     <div class="flex justify-center pt-10 pb-12">
-        <a href="/skoly/odbory/predmety"><button @click="sendRating()" class="h-[80px] text-2xl text-white border-2 rounded-[5px] border-lime-900 bg-lime-900 pl-20 pr-20 pt-2 pb-2">Ohodnotiť</button></a>
+        <router-link :to="{name:'chooseSubject'}">
+            <button @click="sendRating()" class="h-[80px] text-2xl text-white border-2 rounded-[5px] border-lime-900 bg-lime-900 pl-20 pr-20 pt-2 pb-2">Ohodnotiť</button>
+        </router-link>
     </div>
 
 </div>
